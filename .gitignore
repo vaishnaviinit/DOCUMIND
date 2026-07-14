@@ -1,0 +1,60 @@
+# ─── Dependencies ───────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ─── Python ─────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ─── Environment / secrets ──────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ─── Build output ───────────────────────────────
+dist/
+build/
+.vite/
+frontend/dist/
+*.tsbuildinfo
+
+# ─── Uploads / runtime data ─────────────────────
+backend/src/uploads/*
+!backend/src/uploads/.gitkeep
+ai-service/.chroma/
+ai-service/chroma_db/
+*.sqlite3
+
+# ─── Logs ───────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── Coverage / test ────────────────────────────
+coverage/
+.coverage
+htmlcov/
+
+# ─── Editor / OS ────────────────────────────────
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ─── Misc ───────────────────────────────────────
+.cache/
+tmp/
+*.local
